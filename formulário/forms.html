@@ -1,0 +1,67 @@
+<html lang="pt-br>">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../formulário/style.css">
+        <title>Explicando formulário HTML</title>
+    </head>
+
+    <header>
+        <h1> Tudo que você precisa saber sobre formulários HTML!</h1>
+    </header>
+
+    <body>
+
+        <section>
+            <h1> O que é?</h1>
+            <p> Um formulário HTML utiliza de elementos (widgets) para preencher dados ou resultar em uma ação desejada utilizando a linguagem de marcação HTML, ou seja, é uma forma de trazer a interação do usuário com a página. </p>
+        </section>
+        
+        <section>
+            <h1> Como criar?</h1>
+            <p> A tag para criar um formulário é <strong> < form > </strong>, para a abertura, e <strong> < /form > </strong>, para o fechamento. </p>
+            <p> Dentro dela, é possível inserir os atributos "action", para definir o local (através de uma URL) ao qual serão enviados todos os dados recolhidos do formulário, e method, para definir o método HTTP com que o formulário HTML irá lidar com os dados recebidos. </p>
+            <p> Existem dois tipos de métodos: o método GET, onde os dados serão reconhecidos pelo servidor através da URL, e o método POST, onde os dados são enviados ao servidor através do corpo da solicitação HTTP.</p>
+            <p> É recomendado a utilização do método POST para o envio de dados confidenciais/pessoais e do GET para dados não seguros</p>
+            <p> Caso o atributo method não seja declarado, o formulário funcionará através do método GET, já que esse é o método padrão do formulário HTML.</p>
+        </section>
+
+        <section>
+            <h1> Exemplo de uso da tag</h1>
+            <div>
+                <p>< form method="insira aqui 'get' ou 'post'" action="insira aqui a URL que irá receber os dados" > </p>
+                <p> ... </p>
+                <p>< /form > </p>
+            </div>
+        </section>
+
+        <section>
+            <h1> Elementos dentro do Formulário</h1>
+            <p> Para criar um formulário funcional, é necessário usufruir de elementos próprios do formulário, além de também ser possível utilizar outras tags "padrões" do HTML dentro da própria tag forms. </p>
+            <p> Dito isso, veja a seguir os elementos de formulário e suas funções:</p>
+            <div>
+                <p> < input > – Define um campo de entrada de dados; </p>
+                <p> < textarea > – Define uma área de texto, podendo conter diversas linhas de texto; </p>
+                <p> < button > – Define um botão; </p>
+                <p> < select > – Define uma lista selecionável, também conhecida como drop-down; </p> 
+                <p> < option > – Define uma lista de opções dentro de um drop-down select; </p>
+                <p> < optgroup > – Define um grupo de opções; </p>
+                <p> < fieldset > – Define um grupo de campos; </p>
+                <p> < label > – Define um rótulo ou legenda para um campo ou controle do formulário; </p>
+                <p> < output > – Define elementos de saída para o formulário; </p>
+                <p> < legend > – Define um título para o conjunto de campos. </p>
+            </div>
+        </section>
+
+        <section>
+            <h1> Construindo um formulário com elementos</h1>
+            <p> De acordo com o que foi aprendido anteriormente, vamos construir uma barra de pesquisa usando o elemento input:</p>
+            <form method="post" action="fds.html">
+                <input type="search" name="barra" placeholder="Digite o que você deseja encontrar aqui">
+                <a href="" type="submit"><img id="lupa" src="../formulário/lupa.png" alt=""></a>
+            </form>
+        </section>
+
+    </body>
+
+</html>
