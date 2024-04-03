@@ -56,10 +56,30 @@
         <section>
             <h1> Construindo um formulário com elementos</h1>
             <p> De acordo com o que foi aprendido anteriormente, vamos construir uma barra de pesquisa usando o elemento input:</p>
-            <form method="post" action="fds.html">
-                <input type="search" name="barra" placeholder="Digite o que você deseja encontrar aqui">
-                <a href="" type="submit"><img id="lupa" src="../formulário/lupa.png" alt=""></a>
-            </form>
+            <p> Primeiramente, devemos abrir a tag form e escolher qual o melhor method para sua barra </p>
+            <p> Posteriormente, deve ser criado uma novapágina HTML para o usuário ser direcionado quando der um "enter" na sua busca, desta forma:</p>
+            <div>
+                <p>< form method="insira aqui 'get' ou 'post'" action="resultado.html" > </p>
+            </div>
+            <p> Em sequência, inserimos o elemento input. Para especificá-lo, são usadas tipologias e, nesse caso, usamos type="search"</p>
+            <p> Ademais, devemos nomea-lo e adicionar a frase que queremos que apareça antes do usuário digitar algo </p>
+            <p> Por último, é possível adicionar uma imagem de lupa para ajudar na compreensão visual do usuário</p>
+            <div id="exemplos"> 
+                <div>
+                    <h1> FInalizado, nosso código fica assim: </h1>
+                    <p> < form method="get" action="../formulário/pesquisa.html"> </p>
+                        <p>< input id="barra" type="search" name="barra" placeholder="Digite o que você deseja encontrar aqui" ></p>
+                        <p>< a href="" type="submit">< img id="lupa" src="../formulário/lupa.png" alt="" >< /a ></p>
+                    <p>< /form > </p>
+                </div>
+                <div> 
+                    <h1> Resultado: </h1>
+                    <form method="get" action="../formulário/pesquisa.html">
+                        <input id="barra" type="search" name="barra" placeholder="Digite o que você deseja encontrar aqui">
+                        <a href="" type="submit"><img id="lupa" src="../formulário/lupa.png" alt=""></a>
+                    </form>
+                </div>
+            </div>
         </section>
 
     </body>

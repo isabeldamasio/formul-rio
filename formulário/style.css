@@ -25,3 +25,12 @@ section{
     width: auto;
     height: 3%;
 }
+
+#exemplos{
+    display: flex;
+    justify-content: space-between;
+}
+
+#barra{
+    width: 70%;
+}
